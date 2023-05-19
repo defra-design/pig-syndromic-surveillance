@@ -1,1 +1,0 @@
-# pig-syndromic-surveillance
