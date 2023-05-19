@@ -1,0 +1,129 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">What interventions were taken?</h1>
+<!--<p> You can update this diagnosis later. </p>-->
+<div id="waste-hint" class="govuk-hint">
+  Select all that apply.
+</div>
+<div class="govuk-checkboxes" data-module="govuk-checkboxes">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+    <label class="govuk-label govuk-checkboxes__label" for="waste">
+Antibiotics treatment
+    </label>
+  </div>
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+Anti-inflammatory treatment
+    </label>
+  </div>
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+Vaccination introduction
+    </label>
+  </div>
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+Vaccination amendment
+    </label>
+  </div>
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+    <label class="govuk-label govuk-checkboxes__label" for="waste">
+Improve water supply
+    </label>
+  </div>
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+Change in diet
+    </label>
+  </div>
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+Pig management change
+    </label>
+  </div>
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+Environmental change
+    </label>
+  </div>
+
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+Improve biosecurity
+    </label>
+  </div>
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+Genetics change
+    </label>
+  </div>
+
+
+
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+None
+    </label>
+  </div>
+<br/>
+
+      <div class="govuk-button-group">
+        {{ govukButton({
+          text: "Continue",
+          href: "outcome-of-incident.html"
+        }) }}
+
+      <!--  {{ govukButton({
+          text: "Decline",
+          classes: "govuk-button--secondary",
+          href: "#"
+        }) }}-->
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<style>
+
+.govuk-main-wrapper--auto-spacing:first-child, .govuk-main-wrapper--l {
+    padding-top: 0px;
+}
+</style>
+
+{% endblock %}
