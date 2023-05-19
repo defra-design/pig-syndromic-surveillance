@@ -1,0 +1,102 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+    <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--xl" for="event-name">
+We found 5 company sources
+
+      </label>
+    </h1>
+
+  </div>
+
+    <p>Select all that apply</p>
+
+
+
+    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste">
+      Avenue piggery, 221B Baker Street, London NW1 6XE
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+        Corbally farms limited, 32 Windsor Gardens, London W39 3RG
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+      Donal pig and poultry limited, 24 Oil Drum Lane, Shepherd's Bush, London W12 8TT
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+      J.A Godfery and sons limited, 221B Baker Street, London NW1 6XE
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+      Nugget pigs limited, 32 Windsor Gardens, London W39 3RG
+        </label>
+      </div>
+
+
+
+  </fieldset>
+</div>
+<br/>
+<br/>
+      <div class="govuk-button-group">
+        {{ govukButton({
+          text: "Continue",
+          href: "added-company-sources-affected-pigs-came-from.html"
+        }) }}
+
+  {{ govukButton({
+          text: "Find more company sources",
+          classes: "govuk-button--secondary",
+          href: "added-company-sources-affected-pigs-came-from"
+        }) }}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<style>
+
+.govuk-main-wrapper--auto-spacing:first-child, .govuk-main-wrapper--l {
+    padding-top: 0px;
+}
+</style>
+
+{% endblock %}
