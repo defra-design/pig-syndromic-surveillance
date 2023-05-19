@@ -1,0 +1,135 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">What was the outcome of the disease incident? </h1>
+<p> If it is too early to know, you can update this record at a later date. </p>
+
+<div class="govuk-radios" data-module="govuk-radios">
+  <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+    <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+Responded to treatment
+
+    </label>
+  </div>
+  <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+    <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+Responded to vaccination
+
+    </label>
+  </div>
+
+  <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+    <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+Responded to other intervention
+
+    </label>
+  </div>
+
+  <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+    <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+Responded to a combination of interventions
+
+    </label>
+  </div>
+  <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+    <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+Not resolved
+
+    </label>
+  </div>
+
+  <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+    <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+Too early to know
+
+    </label>
+  </div>
+<!--<div class="govuk-checkboxes" data-module="govuk-checkboxes">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+    <label class="govuk-label govuk-checkboxes__label" for="waste">
+Responded to treatment
+    </label>
+  </div>
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+Responded to vaccination
+    </label>
+  </div>
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+Responded to other intervention
+    </label>
+  </div>
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+Not resolved
+    </label>
+  </div>
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+Too early to know
+    </label>
+  </div>-->
+
+
+<br/>
+
+      <div class="govuk-button-group">
+        {{ govukButton({
+          text: "Continue",
+          href: "check-your-answers-with-additional.html"
+        }) }}
+
+      <!--  {{ govukButton({
+          text: "Decline",
+          classes: "govuk-button--secondary",
+          href: "#"
+        }) }}-->
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<style>
+
+.govuk-main-wrapper--auto-spacing:first-child, .govuk-main-wrapper--l {
+    padding-top: 0px;
+}
+</style>
+
+{% endblock %}
