@@ -95,11 +95,19 @@ Urinary
           </label>
         </div>
         <div class="govuk-checkboxes__item">
-          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-    Others
-          </label>
-        </div>
+         <input class="govuk-checkboxes__input" id="contact-3" name="contact" type="checkbox" value="text message" data-aria-controls="conditional-contact-3">
+         <label class="govuk-label govuk-checkboxes__label" for="contact-3">
+           Other
+         </label>
+       </div>
+       <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-contact-3">
+         <div class="govuk-form-group">
+           <label class="govuk-label" for="contact-by-text">
+            Tell us the clinical sign
+           </label>
+          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="3" aria-describedby="more-detail-hint"></textarea>
+         </div>
+       </div>
       </div>
 
     </fieldset>

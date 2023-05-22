@@ -229,6 +229,22 @@ Trueperella pyogenes infection
               </label>
             </div>
 
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+              <label class="govuk-label govuk-radios__label" for="contact">
+          Other
+              </label>
+            </div>
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="contact-by-text">
+               Tell us your suspected primary systemic diagnosis
+              </label>
+             <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="3" aria-describedby="more-detail-hint"></textarea>
+            </div>
+
+              </div>
+
     </div>
 
   </fieldset>
