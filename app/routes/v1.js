@@ -197,6 +197,21 @@ router.post(`/v3-1/question_3-branch`, function (req, res) {
 });
 
 
+router.post(`/v3-1/question_8-branch`, function (req, res) {
+    const checkSource = req.session.data['question_3-what'];
+
+    if (checkSource === 'Yes') {
+        res.redirect(`submit-from-template`);
+
+    } else {
+        res.redirect(`date-of-consultation`);
+    }
+
+
+
+});
+
+
 router.post(`/draft/question_draft-branch`, function (req, res) {
     const checkSource = req.session.data['question_draft-what'];
 
